@@ -12,6 +12,7 @@ This repository demonstrates Terraform workspaces and how multiple environments 
 - Using terraform.workspace
 - Dynamic resource naming
 
+- CI/CD pipeline
 ## Commands Practiced
 
 ```bash
