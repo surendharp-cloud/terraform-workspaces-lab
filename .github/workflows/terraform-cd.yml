@@ -31,7 +31,10 @@ jobs:
             }
 
       - name: Terraform Init
-        run: terraform init -backend=false
+        run: terraform init
+
+      - name: Select Terraform Workspace
+        run: terraform workspace select dev || terraform workspace new dev  
 
       - name: Terraform Apply
         run: terraform apply -auto-approve -input=false
